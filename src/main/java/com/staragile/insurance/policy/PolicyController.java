@@ -23,6 +23,16 @@ public class PolicyController {
 		return "Hello World!!!";
 	}
 	
+	@RequestMapping("/seeddata")
+	public String getPolicy(){
+		System.out.println("Inside seeddata");
+		Policy p1 = new Policy("1", "Vilas", "Vilas Address", "123456789");
+		policySvc.addPolicy(p1);
+		
+		p1 = new Policy("2", "Tousif", "Tousif Address", "987654321");
+		policySvc.addPolicy(p1);
+		return "Data seeded successfully!!!";
+	}
 	
 	@RequestMapping("/policy/{id}")
 	public Optional<Policy> getPolicy(@PathVariable String id){
