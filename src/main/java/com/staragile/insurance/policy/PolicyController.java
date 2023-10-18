@@ -29,7 +29,7 @@ public class PolicyController {
 		Policy p1 = new Policy("1", "Vilas", "Vilas Address", "123456789");
 		policySvc.addPolicy(p1);
 		
-		p1 = new Policy("2", "Tousif", "Tousif Address", "987654321");
+		p1 = new Policy("2", "Siri", "Siri Address", "987654321");
 		policySvc.addPolicy(p1);
 		return "Data seeded successfully!!!";
 	}
