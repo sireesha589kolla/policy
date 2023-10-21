@@ -26,10 +26,10 @@ public class PolicyController {
 	@RequestMapping("/seeddata")
 	public String getPolicy(){
 		System.out.println("Inside seeddata");
-		Policy p1 = new Policy("1", "Vilas", "Vilas Address", "123456789");
+		Policy p1 = new Policy("1", "sireesha", "kolla", "1234567890");
 		policySvc.addPolicy(p1);
 		
-		p1 = new Policy("2", "Siri", "Siri Address", "987654321");
+		p1 = new Policy("2", "Siri", "Siri Address", "9876543210");
 		policySvc.addPolicy(p1);
 		return "Data seeded successfully!!!";
 	}
