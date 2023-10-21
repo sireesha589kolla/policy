@@ -43,7 +43,7 @@ function deletePolicy(){
    	<form action="addpolicy" id="polcyForm" type="POST">
 
 	<br>
-    	Enter your ID : <input type="text" name="id" size="20">
+    	Enter your ID: <input type="text" name="id" size="20">
     <br>
     	Enter your name: <input type="text" name="name" size="20">
     <br>	
